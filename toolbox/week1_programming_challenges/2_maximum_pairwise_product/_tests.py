@@ -4,15 +4,20 @@ n = 100
 
 numArray = [rdInt(1, n) for i in range(n)]
 
-print(numArray)
 
-idx1 = numArray[0]
-idx2 = numArray[1]
+def Range(list1):
+    largest = list1[0]
+    largest2 = list1[0]
 
-for i in range(2, n):
-    if numArray[i] >= idx1:
-        idx2 = idx1
-        idx1 = numArray[i]
-print(idx1, idx2)
-print(idx1 * idx2)
+    for item in list1:
+        if item > largest:
+            largest = item
+        elif largest2 != largest and largest2 < item:
+            largest2 = item
 
+
+    print("Largest element is:", largest)
+    print("Second Largest element is:", largest2)
+
+
+Range(numArray)
