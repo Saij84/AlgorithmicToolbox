@@ -15,34 +15,34 @@ def max_pairwise_product_naive(numbers):
 def max_pairwise_product(numbers):
     n = len(numbers)
     if n > 2:
-        index1 = numbers[0]
-        index2 = numbers[1]
+        idx1 = numbers[0]
+        idx2 = numbers[1]
 
-        for i in range(1, n):
-            if numbers[i] > numbers[0]:
-                index1 = numbers[i]
-
-        for i in range(1, n):
-            if numbers[i] != index1 and numbers[i] > index2:
-                index2 = numbers[i]
-        return index1 * index2
+        for i in range(2, n):
+            if numbers[i] >= idx1 >= idx2:
+                idx2 = idx1
+                idx1 = numbers[i]
+        print(idx1, idx2)
+        return idx1*idx2
+    elif n == 1:
+        return 0
     else:
         return numbers[0] * numbers[1]
 
 def stress_test(N, M):
     n = rd.randint(2, N)
-    A = [rd.randint(0, M+1) for i in range(1, n+1)]
+    A = [rd.randint(0, M) for i in range(1, n)]
 
     print(A)
 
     if max_pairwise_product(A) == max_pairwise_product_naive(A):
         print("OK")
     else:
-        print( max_pairwise_product(A), " is not equal to ", max_pairwise_product_naive(A))
+        print( max_pairwise_product(A), "is NOT equal to", max_pairwise_product_naive(A))
 
 if __name__ == '__main__':
     count = 0
-    for i in range(100):
+    for i in range(10):
         N = rd.randint(1, 100)
         M = rd.randint(1, 1000)
         input_var = stress_test(10, 100000)
