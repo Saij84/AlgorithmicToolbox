@@ -24,7 +24,7 @@ def gcd_fast(a, b):
 
 
 if __name__ == "__main__":
-    input = "2885153850 1121183019"
+    input = "6 8"
     a, b = map(int, input.split())
     #print(gcd_naive(a, b))
     print(gcd_fast(a, b))
