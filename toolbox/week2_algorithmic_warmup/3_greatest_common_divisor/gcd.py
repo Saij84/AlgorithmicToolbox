@@ -10,7 +10,21 @@ def gcd_naive(a, b):
 
     return current_gcd
 
+
+def gcd_fast(a, b):
+    maxVal = max(a, b)
+    minVal = min(a, b)
+
+    if b != 0:
+        remainder = maxVal % minVal
+        return gcd_fast(minVal, remainder)
+
+    return maxVal
+
+
+
 if __name__ == "__main__":
-    input = "28851538 1183019"
+    input = "2885153850 1121183019"
     a, b = map(int, input.split())
-    print(gcd_naive(a, b))
+    #print(gcd_naive(a, b))
+    print(gcd_fast(a, b))
