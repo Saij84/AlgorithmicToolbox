@@ -12,13 +12,13 @@ def calc_fib(n):
 
     while i < n+1:
         if i == 2:
-            result = idx1 + idx2
+            result = (idx1 + idx2)%10
         elif i == 3:
             result = idx2 + result
         else:
             idx1 = idx2
             idx2 = result
-            result = idx1 + idx2
+            result = (idx1 + idx2)%10
         i += 1
     return result
-print(calc_fib())
+print(calc_fib(331))
