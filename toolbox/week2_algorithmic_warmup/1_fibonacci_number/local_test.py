@@ -21,6 +21,6 @@ def calc_fib(n):
             result = (idx1 + idx2)
         i += 1
     return result
-print(calc_fib(2015)%3)
+print(calc_fib(1020))
 
 

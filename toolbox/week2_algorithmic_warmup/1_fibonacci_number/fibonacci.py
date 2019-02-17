@@ -31,4 +31,4 @@ def calc_fib(n):
             result = (idx1 + idx2)%10
         i += 1
     return result
-print(calc_fib(331))
+print(calc_fib(1020))

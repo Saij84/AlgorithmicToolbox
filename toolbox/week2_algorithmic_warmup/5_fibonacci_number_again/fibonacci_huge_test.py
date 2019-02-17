@@ -1,17 +1,20 @@
 import time
 
-def get_pisano_period(m):
-    a = 0
-    b = 1
 
-    i = 0
-    while i < m * m:
-        c = (a + b) % m
-        a = b
-        b = c
-        i += 1
-        if a == 0 and b == 1:
-            return i
+
+def get_pisano_period(m):
+    val1 = 0
+    val2 = 1
+
+    seq_len = 0
+    while seq_len < m*m:
+        remainder = (val1 + val2) % m
+        val1 = val2
+        val2 = remainder
+        seq_len += 1
+
+        if val1 == 0 and val2 == 1:
+            return seq_len
 
 def get_fibonacci_huge(n, m):
     get_len = get_pisano_period(m)
@@ -33,8 +36,7 @@ def get_fibonacci_huge(n, m):
 
 
 t0 = time.time()
-print(get_pisano_period(3))
-print(get_fibonacci_huge(2816213588, 239))
+print(get_fibonacci_huge(5, 10))
 t1 = time.time()
 
 print(t1-t0)
