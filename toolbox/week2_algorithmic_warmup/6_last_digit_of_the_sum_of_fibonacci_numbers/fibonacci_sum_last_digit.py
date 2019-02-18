@@ -48,7 +48,7 @@ def fibonacci_sum_fast(n, m):
 
 
 if __name__ == '__main__':
-    input = "8374293856215619875 10"
+    input = "10 10"
     n, m = map(int, input.split())
 
     # t0 = time.time()
