@@ -48,13 +48,13 @@ def fibonacci_sum_fast(n, m):
 
 
 if __name__ == '__main__':
-    input = "10 10"
+    input = " 10"
     n, m = map(int, input.split())
 
-    # t0 = time.time()
-    # print(fibonacci_sum_naive(n))
-    # t1 = time.time()
-    # print("Slow time: {}".format(t1-t0))
+    t0 = time.time()
+    print(fibonacci_sum_naive(n))
+    t1 = time.time()
+    print("Slow time: {}".format(t1-t0))
 
     t0 = time.time()
     print (fibonacci_sum_fast(n, m))
