@@ -1,0 +1,29 @@
+Input:
+950                 #  (d) distance point A -> B
+400                 #  (m) max distance per refill
+4                   #  stations between point A -> B
+200 375 550 750     #  (s) distance between stations
+
+Output:
+2
+
+
+Input:
+10
+3
+4
+1 2 5 9
+
+Output:
+-1
+
+
+Input:
+200
+250
+2
+100
+150
+
+Output:
+0
