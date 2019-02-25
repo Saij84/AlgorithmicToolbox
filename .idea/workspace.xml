@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ab3c88-db36-4a0e-bdd1-1f22a6eb4bf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/car_fueling.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/car_fueling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case" beforeDir="false" afterPath="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DataStructuresFundamentals/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructuresFundamentals/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataStructuresFundamentals/src/_other/_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructuresFundamentals/src/_other/_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,14 +16,18 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/car_fueling.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -72,6 +75,7 @@
         <option value="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/2_maximum_value_of_the_loot/test1.txt" />
         <option value="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case.py" />
         <option value="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case" />
+        <option value="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/car_fueling.py" />
       </list>
     </option>
   </component>
@@ -82,11 +86,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-241" />
-    <option name="y" value="-8" />
-    <option name="width" value="1619" />
-    <option name="height" value="1037" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1390" />
+    <option name="height" value="1756" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -189,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.fractional_knapsack">
+  <component name="RunManager" selected="Python.car_fueling">
     <configuration name="_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AlgorithmicToolbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -203,6 +206,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/2_maximum_value_of_the_loot/_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="car_fueling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AlgorithmicToolbox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/car_fueling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,27 +277,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fibonacci_sum_last_digit" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AlgorithmicToolbox" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toolbox/week2_algorithmic_warmup/6_last_digit_of_the_sum_of_fibonacci_numbers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toolbox/week2_algorithmic_warmup/6_last_digit_of_the_sum_of_fibonacci_numbers/fibonacci_sum_last_digit.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="fractional_knapsack" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AlgorithmicToolbox" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,11 +300,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.car_fueling" />
         <item itemvalue="Python.fractional_knapsack" />
         <item itemvalue="Python._test (1)" />
         <item itemvalue="Python.change" />
         <item itemvalue="Python.fibonacci_partial_sum" />
-        <item itemvalue="Python.fibonacci_sum_last_digit" />
       </list>
     </recent_temporary>
   </component>
@@ -319,22 +322,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21812434" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25493172" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47666666" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47131148" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="MayaLog" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.16551724" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -496,9 +498,7 @@
     <entry file="file://$PROJECT_DIR$/toolbox/week3_greedy_algorithms/4_maximum_advertisement_revenue/dot_product.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case.py" />
     <entry file="file://$PROJECT_DIR$/toolbox/week3_greedy_algorithms/2_maximum_value_of_the_loot/test1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -508,13 +508,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/test_case">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/toolbox/week3_greedy_algorithms/3_car_fueling/car_fueling.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

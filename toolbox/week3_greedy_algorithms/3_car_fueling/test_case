@@ -4,9 +4,18 @@ Input:
 4                   #  stations between point A -> B
 200 375 550 750     #  (s) distance between stations
 
+Input:
+950
+400
+4
+200 375 550 750
+
 Output:
 2
 
+
+       if stops[current_refills+1] == stops[-1]:
+            return num_refills
 
 Input:
 10
