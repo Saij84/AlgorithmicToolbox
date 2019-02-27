@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AlgorithmicToolbox.iml" filepath="$PROJECT_DIR$/.idea/AlgorithmicToolbox.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../DataStructuresFundamentals/.idea/DataStructuresFundamentals.iml" filepath="$PROJECT_DIR$/../DataStructuresFundamentals/.idea/DataStructuresFundamentals.iml" />
-    </modules>
-  </component>
-</project>
