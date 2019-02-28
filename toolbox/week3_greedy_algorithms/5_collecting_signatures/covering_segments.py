@@ -8,11 +8,19 @@ Segment = namedtuple('Segment', 'start end')
 def optimal_points(segments):
     points = []
     sorted_segments = sorted(segments, key=itemgetter(1))
-    print("test")
+    n = len(segments)-1
+    print("n", n)
+    i = 0
 
-    for s in sorted_segments:
-        points.append(s.start)
-        points.append(s.end)
+    while i <= n:
+        print(sorted_segments[i].end, sorted_segments[i+1].end)
+        l, r = sorted_segments[i].end, sorted_segments[i+1].end
+
+        points = [l, r]
+        i += 1
+
+        while i <= n and sorted_segments[i].end <= r:
+            i += 1
     return points
 
 if __name__ == '__main__':
