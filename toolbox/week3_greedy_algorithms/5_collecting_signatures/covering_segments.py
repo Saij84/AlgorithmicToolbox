@@ -7,19 +7,15 @@ Segment = namedtuple('Segment', 'start end')
 
 def optimal_points(segments):
     points = []
-    sorted_segments = sorted(segments, key=itemgetter(1))
-    n = len(segments)-1
-    print("n", n)
+    sorted_segments = sorted(segments, key=itemgetter(1))  # sort segments according to the second item in tuple
+    n_segments = len(sorted_segments)-1
+
     i = 0
-
-    while i <= n:
-        print(sorted_segments[i].end, sorted_segments[i+1].end)
-        l, r = sorted_segments[i].end, sorted_segments[i+1].end
-
-        points = [l, r]
+    while i < n_segments:
+        r = sorted_segments[i].end  # set end point
+        points.append(r)  # store end point
         i += 1
-
-        while i <= n and sorted_segments[i].end <= r:
+        while i <= n_segments and sorted_segments[i].start <= r:  # check if the start of other segments falls within r
             i += 1
     return points
 
