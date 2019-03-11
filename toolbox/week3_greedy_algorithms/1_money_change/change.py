@@ -14,5 +14,5 @@ def get_change(m):
     return change
 
 if __name__ == '__main__':
-    m = int(28)
+    m = int(872365)
     print(get_change(m))
