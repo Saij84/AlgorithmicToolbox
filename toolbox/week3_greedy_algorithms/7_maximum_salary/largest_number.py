@@ -47,4 +47,7 @@ if __name__ == '__main__':
     data = input.split()
     a = data[1:]
     print(a)
+    t0 = time.time()
     print(largest_number(a))
+    t1 = time.time()
+    print(t1-t0)
