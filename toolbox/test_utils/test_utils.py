@@ -17,11 +17,13 @@ def array_generator(start, end, isRandom=True, isRandomRange=False):
     else:
         return [num for num in range(start, end)]
 
-def function_time(f):
+
+# return time in milliseconds
+def function_time(function):
     def wrap(*args):
-        time1 = time.time()
-        func = f(*args)
-        time2 = time.time()
-        print('{:s} function took {:.3f} ms'.format(f.__name__, (time2-time1)*1000.0))
+        start_time = time.time()
+        func = function(*args)
+        finish_time = time.time()
+        print('{:s} function took {:.4f} ms'.format(function.__name__, (finish_time-start_time)*1000.0))
         return func
     return wrap
