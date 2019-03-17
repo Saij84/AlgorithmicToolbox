@@ -1,26 +1,19 @@
 from toolbox.test_utils import test_utils as testU
 
 def swap(arr, src, trg):
-    src = arr[src]
-    trg = arr[trg]
-    swap = arr[trg]
-
-    print(src, trg, swap)
-    arr[src] = trg
-    trg[trg] = swap
-
+    arr[trg], arr[src] = arr[src], arr[trg]
     return arr
+
+@testU.function_time
 def selection_sort(arr):
-    array_len = len(arr)-1
+    array_len = len(arr)
+
     for i in range(array_len):
-        min_index = i
         for j in range(i+1, array_len):
-            if arr[i] < arr[min_index]:
-                min_index = j
+            if arr[i] > arr[j]:
+                arr[j], arr[i] = arr[i], arr[j]
+    return arr
 
-
-
-for i in range(30):
-    rand_data = testU.array_generator(1, 10, 1, 1)
-    print(rand_data)
-# print(swap(rand_data, 0, 5))
+for i in range(10):
+    rand_data = testU.array_generator(1, 50, 1, 1)
+    print(selection_sort(rand_data), "\n")
