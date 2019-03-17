@@ -6,10 +6,6 @@ import time
 
 # generate an array random or otherwise
 def array_generator(start, end, isRandom=True, isRandomRange=False):
-    """
-
-    :rtype: list
-    """
     if isRandom == True:
         if isRandomRange == True:
             end = randint(1, end)
