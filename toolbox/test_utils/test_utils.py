@@ -15,7 +15,7 @@ def array_generator(start, end, isRandom=True, isRandomRange=False):
 
 
 # return time in milliseconds
-def function_time(function):
+def function_timer(function):
     def wrap(*args):
         start_time = time.time()
         func = function(*args)
