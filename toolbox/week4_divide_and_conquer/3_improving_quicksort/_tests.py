@@ -24,18 +24,6 @@ def merge_sorting(arr):
         return arr
 
 
-def find_largest(arr, largest, n):
-    # base case
-    if n <= 0:
-        return largest
-
-    if largest == 0:
-        largest = arr[n-1]
-
-    if arr[n] > largest:
-        largest = arr[n]
-
-    return find_largest(arr, largest, n-1)
 
 @testU.function_timer
 def count_sort(arr):
