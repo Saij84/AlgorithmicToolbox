@@ -1,12 +1,7 @@
-from toolbox.test_utils import test_utils as testU
-from time import time
-from sys import setrecursionlimit
+from utils.src.array_utils import array_utils as aUtils
+from utils.src.time_utils import time_utils as tUtils
 
-
-setrecursionlimit(10**8)
-
-
-@testU.function_timer
+@tUtils.function_timer
 def selection_sort(arr):
     array_len = len(arr)
 
@@ -16,7 +11,7 @@ def selection_sort(arr):
                 arr[j], arr[i] = arr[i], arr[j]
     return arr
 
-@testU.function_timer
+
 def merge_sorting(arr):
     array_len = len(arr)
 
@@ -24,8 +19,6 @@ def merge_sorting(arr):
         return arr
 
 
-
-@testU.function_timer
 def count_sort(arr):
     count = []
     array_len = len(arr)
@@ -33,13 +26,7 @@ def count_sort(arr):
     for i in range(array_len):
         count += 1
 
+for i in range(10):
+    data_in = aUtils.array_generator(1, 10, isRandomRange=False)
+    print(selection_sort(data_in))
 
-
-for i in range(1):
-    rand_data = testU.array_generator(1, 1000, 1, 0)
-    #print(rand_data)
-    t1 = time()
-    print(find_largest(rand_data, 0, 1000-1), "\n")
-    t2 = time()
-
-    print(t2-t1)
