@@ -12,11 +12,6 @@ def selection_sort(arr):
     return arr
 
 
-def merge_sorting(arr):
-    array_len = len(arr)
-
-    if array_len == 1:
-        return arr
 
 
 def count_sort(arr):
@@ -26,7 +21,8 @@ def count_sort(arr):
     for i in range(array_len):
         count += 1
 
-for i in range(10):
-    data_in = aUtils.array_generator(1, 10, isRandomRange=False)
-    print(selection_sort(data_in))
+for i in range(1):
+    data_in = aUtils.array_generator(1,9, isRandomRange=False)
+    print(data_in)
+    print(merge_sort(data_in))
 
