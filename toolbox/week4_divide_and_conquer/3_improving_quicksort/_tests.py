@@ -43,3 +43,4 @@ for i in range(1):
     print(data_in)
     print(sorting(data_in))
 
+print(list(range(10)))
