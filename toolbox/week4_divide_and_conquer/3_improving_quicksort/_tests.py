@@ -43,4 +43,18 @@ for i in range(1):
     print(data_in)
     print(sorting(data_in))
 
-print(list(range(10)))
+# def partition3(a, l, r):
+#     pivot, l_idx, r_idx = a[l], l, r
+#     idx = l_idx
+#
+#     while idx <= r_idx:
+#         print("idx", idx)
+#         if a[idx] < pivot:
+#             a[l_idx], a[idx] = a[idx], a[l_idx]
+#             l_idx += 1
+#         elif idx > pivot:
+#             a[r_idx], a[idx] = a[idx], a[r_idx]
+#         r_idx -= 1
+#         idx -= 1
+#     idx += 1
+#     return l_idx, r_idx
