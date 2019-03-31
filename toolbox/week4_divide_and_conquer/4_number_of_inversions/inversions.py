@@ -63,12 +63,12 @@ def get_number_of_inversions(a, b, left, right):
     number_of_inversions += get_number_of_inversions(a, b, left, ave)
     number_of_inversions += get_number_of_inversions(a, b, ave, right)
 
-    number_of_inversions += merge(a, b, left, ave, right)
+    print(merge(a, b, left, ave, right))
 
     #write your code here
     return number_of_inversions
 
-def merge(a, b, left, ave, right):
+def merge(arr, b, left, mid, right):
     """
     Merging function for merge sort
 
@@ -77,28 +77,36 @@ def merge(a, b, left, ave, right):
     :return: sorted array
     """
 
-    i, j, k = left, ave, left
+    i, j, k = left, mid, left
 
     result = []
     count = 0
 
-    while len(left) > 0 or len(right) > 0:
-        if len(left) > 0 and len(right) > 0:  # run when there are items in both lef and right arrays
-            if left[0] <= right[0]:
-                result.append(left[0])
-                left = left[1:]
-            else:
-                result.append(right[0])
-                right = right[1:]
-                count += 1
-        elif len(left) > 0:  # catch left leftovers
-            result.append(left[0])
-            left = left[1:]
-        elif len(right) > 0: # catch right leftovers
-            result.append(right[0])
-            right = right[1:]
+    while i <= mid-1 and j <= right:
+        print(i, j, k, mid)
+        if arr[i] <= arr[j]:  # run when there are items in both lef and right arrays
+            b[k] = arr[i]
+            k += 1
+            i += 1
+        else:
+            b[k] = arr[j]
+            k += 1
+            j += 1
+            count += 1
+        print("b", b, i, j, k, count)
+    while(i <= mid-1):
+        b[k] = arr[i]
+        k += 1
+        i += 1
 
-        print("result:", result)
+    while j <= right:
+        b[k] = arr[j]
+        k += 1
+        j += 1
+
+    # for i in range(left, right):
+    #     arr[i] = b[i]
+
     print(count)
     print("\n")
 
