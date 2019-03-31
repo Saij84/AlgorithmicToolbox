@@ -55,17 +55,14 @@ result: [0, 2, 4, 7, 8, 8, 10, 10]
 
 def get_number_of_inversions(a, b, left, right):
     number_of_inversions = 0
-    if right - left <= 1:
-        return number_of_inversions
+    if left < right:
+        mid = (left + right) // 2
 
-    ave = (left + right) // 2
+        number_of_inversions = get_number_of_inversions(a, b, left, mid)
+        number_of_inversions += get_number_of_inversions(a, b, mid+1, right)
 
-    number_of_inversions += get_number_of_inversions(a, b, left, ave)
-    number_of_inversions += get_number_of_inversions(a, b, ave, right)
+        number_of_inversions += merge(a, b, left, mid, right)
 
-    print(merge(a, b, left, ave, right))
-
-    #write your code here
     return number_of_inversions
 
 def merge(arr, b, left, mid, right):
@@ -79,11 +76,9 @@ def merge(arr, b, left, mid, right):
 
     i, j, k = left, mid, left
 
-    result = []
     count = 0
 
     while i <= mid-1 and j <= right:
-        print(i, j, k, mid)
         if arr[i] <= arr[j]:  # run when there are items in both lef and right arrays
             b[k] = arr[i]
             k += 1
@@ -93,8 +88,8 @@ def merge(arr, b, left, mid, right):
             k += 1
             j += 1
             count += 1
-        print("b", b, i, j, k, count)
-    while(i <= mid-1):
+
+    while i <= mid-1:
         b[k] = arr[i]
         k += 1
         i += 1
@@ -104,13 +99,10 @@ def merge(arr, b, left, mid, right):
         k += 1
         j += 1
 
-    # for i in range(left, right):
-    #     arr[i] = b[i]
+    for i in range(left, right):
+        arr[i] = b[i]
 
-    print(count)
-    print("\n")
-
-    return result
+    return count
 
 
 if __name__ == '__main__':
@@ -119,5 +111,4 @@ if __name__ == '__main__':
         input = in_data
         n, a = len(input), input
         b = n * [0]
-        print(in_data)
-        print(get_number_of_inversions(a, b, 0, len(a)))
+        print(get_number_of_inversions(a, b, 0, n-1))
